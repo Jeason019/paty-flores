@@ -1395,12 +1395,29 @@ body {
   <div class="intro">
 
     <small>
-      UN DETALLE HECHO PARA TI
+      UN DETALLE HECHO PARA TI <br><strong>MI PATICO</strong>
     </small>
 
-    <h1 style="text-shadow: 0 3px 0 #e9cfae, 0 6px 10px rgba(131, 131, 130, 0.808), 0 0 18px rgba(255,225,80,.55);">
-  Paty &hearts;
+<h1
+    id="miPatico"
+    style="
+        text-shadow: 0 3px 0 #e9cfae,
+                    0 6px 10px rgba(131,131,130,.8),
+                    0 0 18px rgba(255,225,80,.55);
+        cursor: pointer;
+        animation: latido 1.5s infinite;
+    "
+>
+  💜
 </h1>
+
+<style>
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+}
+</style>
+
 
 
   </div>
