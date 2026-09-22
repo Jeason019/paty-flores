@@ -1372,6 +1372,52 @@ body {
   }
 }
 
+/* =====================================
+   BOTÓN SALIR
+===================================== */
+
+.close-page {
+  position: fixed;
+
+  top: 15px;
+  right: 15px;
+
+  width: 42px;
+  height: 42px;
+
+  z-index: 9999;
+
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+
+  background: rgba(70,35,90,.45);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 5px 20px rgba(20,5,30,.3);
+
+  transition: .25s ease;
+}
+
+.close-page:hover {
+  background: rgba(255,80,120,.45);
+  transform: rotate(90deg) scale(1.1);
+}
+
+
 </style>
 
 
@@ -1379,6 +1425,10 @@ body {
 </head>
 
 <body>
+  <button id="closePage" class="close-page" aria-label="Salir">
+  ×
+</button>
+
 
 <div class="scene">
 
@@ -1391,6 +1441,9 @@ body {
   <!-- =========================
        ENCABEZADO
   ========================= -->
+
+  
+
 
   <div class="intro">
 
@@ -2509,6 +2562,18 @@ daisies.forEach(
 ===================================== */
 
 updateVolumeIcon();
+/* =====================================
+   BOTÓN SALIR
+===================================== */
+
+const closePage =
+  document.getElementById("closePage");
+
+closePage.addEventListener("click", () => {
+
+  window.history.back();
+
+});
 
 </script>
 
