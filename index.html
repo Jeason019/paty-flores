@@ -14,7 +14,6 @@
 
 /* =====================================
    CONTROLES DE MÚSICA
-   SUPERIOR IZQUIERDA - PEQUEÑO
 ===================================== */
 
 .music-controls {
@@ -149,7 +148,6 @@ body {
 
 .stars {
   position: absolute;
-
   inset: 0;
 
   background-image:
@@ -300,7 +298,7 @@ body {
 
 
 /* =====================================
-   JARDÍN / RAMO
+   JARDÍN
 ===================================== */
 
 .garden {
@@ -351,11 +349,6 @@ body {
     0 0 4px
     rgba(80, 150, 70, .25);
 }
-
-
-/* =====================================
-   TALLOS
-===================================== */
 
 .stem-1 {
   transform: rotate(-40deg);
@@ -746,7 +739,7 @@ body {
 
 
 /* =====================================
-   PÉTALOS AMARILLOS
+   PÉTALOS
 ===================================== */
 
 .petal {
@@ -779,11 +772,6 @@ body {
   transform-origin:
     50% 58px;
 }
-
-
-/* =====================================
-   12 PÉTALOS
-===================================== */
 
 .petal-1 {
   transform: rotate(0deg);
@@ -835,7 +823,7 @@ body {
 
 
 /* =====================================
-   CENTRO DE LA MARGARITA
+   CENTRO
 ===================================== */
 
 .daisy-center {
@@ -915,7 +903,7 @@ body {
 
 
 /* =====================================
-   CARTA / MENSAJE
+   CARTA / MENSAJE - PC
 ===================================== */
 
 .message {
@@ -923,9 +911,7 @@ body {
 
   z-index: 20;
 
-  /* MÁS ARRIBA EN PC */
   top: 25%;
-
   right: 5%;
 
   width:
@@ -1175,8 +1161,7 @@ body {
 @media(max-width: 800px) {
 
   body {
-    overflow:
-      hidden;
+    overflow: hidden;
   }
 
 
@@ -1185,17 +1170,11 @@ body {
   ========================= */
 
   .moon {
-    width:
-      55px;
+    width: 55px;
+    height: 55px;
 
-    height:
-      55px;
-
-    top:
-      5%;
-
-    right:
-      7%;
+    top: 5%;
+    right: 7%;
   }
 
 
@@ -1204,27 +1183,23 @@ body {
   ========================= */
 
   .intro {
-    top:
-      6%;
+    top: 5%;
   }
 
   .intro small {
-    font-size:
-      9px;
-
-    letter-spacing:
-      3px;
+    font-size: 9px;
+    letter-spacing: 3px;
   }
 
   .intro h1 {
-    font-size:
-      45px;
+    font-size: 45px;
+
+    margin-top: 6px;
   }
 
 
   /* =========================
      FLORES
-     MÁS ARRIBA
   ========================= */
 
   .garden {
@@ -1232,67 +1207,56 @@ body {
       translateX(-50%)
       scale(.55);
 
-    bottom:
-      65px;
+    bottom: 20px;
 
-    z-index:
-      5;
+    z-index: 5;
   }
 
 
-  /* =========================
-     CARTA
-     MÁS ARRIBA
-  ========================= */
+  /* =================================
+     CARTA DEBAJO DE "PATY ♥"
+     ================================= */
 
   .message {
-    width:
-      88%;
+    position: absolute;
 
-    right:
-      6%;
+    /* CENTRADA */
+    left: 6%;
+    right: auto;
 
-    top:
-      auto;
+    width: 88%;
 
-    bottom:
-      100px;
+    /* ESTA ES LA CLAVE */
+    top: 145px;
+    bottom: auto;
 
-    max-height:
-      34vh;
+    max-height: 34vh;
 
-    padding:
-      18px;
+    padding: 18px;
 
-    border-radius:
-      22px;
+    border-radius: 22px;
 
+    /* GSAP empieza desde abajo */
     transform:
       translateY(80px);
 
-    z-index:
-      20;
+    z-index: 20;
   }
 
 
   .message h2 {
-    font-size:
-      24px;
+    font-size: 24px;
 
-    margin-bottom:
-      10px;
+    margin-bottom: 10px;
   }
 
 
   .message p {
-    font-size:
-      14px;
+    font-size: 14px;
 
-    line-height:
-      1.6;
+    line-height: 1.6;
 
-    margin:
-      9px 0;
+    margin: 9px 0;
   }
 
 
@@ -1307,15 +1271,13 @@ body {
 
 
   /* =========================
-     BOTÓN CELULAR
+     BOTÓN
   ========================= */
 
   .start {
-    z-index:
-      100;
+    z-index: 100;
 
-    bottom:
-      15px;
+    bottom: 15px;
 
     padding:
       11px 22px;
@@ -1345,7 +1307,7 @@ body {
 
 
   /* =========================
-     CONTROLES MÚSICA
+     MÚSICA
   ========================= */
 
   .music-controls {
@@ -1411,6 +1373,7 @@ body {
 }
 
 </style>
+
 
 
 </head>
