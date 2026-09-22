@@ -1887,6 +1887,9 @@ body {
 const start =
   document.getElementById("start");
 
+const title =
+  document.querySelector(".intro h1");
+
 const message =
   document.getElementById("message");
 
@@ -2239,6 +2242,35 @@ function startAnimation() {
 
 
   /* =========================
+     EFECTO EN EL NOMBRE
+  ========================= */
+
+  if (title) {
+
+    gsap.to(
+
+      title,
+
+      {
+
+        scale: 1.08,
+
+        duration: .3,
+
+        ease: "power2.out",
+
+        yoyo: true,
+
+        repeat: 1
+
+      }
+
+    );
+
+  }
+
+
+  /* =========================
      CORAZONES
   ========================= */
 
@@ -2385,13 +2417,29 @@ function startAnimation() {
 
 
 /* =====================================
-   BOTÓN PRINCIPAL
+   BOTÓN SORPRESA
 ===================================== */
 
 start.addEventListener(
   "click",
   startAnimation
 );
+
+
+/* =====================================
+   CLIC EN "PATY ♥"
+===================================== */
+
+if (title) {
+
+  title.style.cursor = "pointer";
+
+  title.addEventListener(
+    "click",
+    startAnimation
+  );
+
+}
 
 
 /* =====================================
@@ -2483,6 +2531,7 @@ daisies.forEach(
 updateVolumeIcon();
 
 </script>
+
 
 
 </body>
