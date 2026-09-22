@@ -19,7 +19,6 @@
 
 .music-controls {
   position: fixed;
-
   z-index: 100;
 
   top: 15px;
@@ -32,23 +31,16 @@
 
   padding: 7px 6px;
 
-  border: 1px solid
-    rgba(255, 255, 255, .25);
-
+  border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 14px;
 
-  background:
-    rgba(70, 35, 90, .40);
+  background: rgba(70, 35, 90, .40);
 
-  backdrop-filter:
-    blur(10px);
-
-  -webkit-backdrop-filter:
-    blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   box-shadow:
-    0 5px 15px
-    rgba(20, 5, 30, .25);
+    0 5px 15px rgba(20, 5, 30, .25);
 }
 
 
@@ -63,27 +55,22 @@
   border: 0;
   border-radius: 50%;
 
-  background:
-    rgba(255, 255, 255, .13);
+  background: rgba(255, 255, 255, .13);
 
   color: white;
-
   font-size: 13px;
 
   padding: 0;
 
   cursor: pointer;
 
-  transition:
-    .2s ease;
+  transition: .2s ease;
 }
 
 .music-controls button:hover {
-  background:
-    rgba(255, 240, 150, .3);
+  background: rgba(255, 240, 150, .3);
 
-  transform:
-    scale(1.08);
+  transform: scale(1.08);
 }
 
 
@@ -94,13 +81,11 @@
 #volumeSlider {
   width: 60px;
 
-  accent-color:
-    #ffe34d;
+  accent-color: #ffe34d;
 
   cursor: pointer;
 
-  transform:
-    rotate(-90deg);
+  transform: rotate(-90deg);
 
   margin: 25px 0;
 }
@@ -123,6 +108,7 @@ body {
 
 body {
   min-height: 100vh;
+
   overflow: hidden;
 
   font-family:
@@ -206,13 +192,11 @@ body {
 
   border-radius: 50%;
 
-  background:
-    #fff8d0;
+  background: #fff8d0;
 
   box-shadow:
     0 0 25px #fff3a1,
-    0 0 70px
-    rgba(255, 245, 170, .5);
+    0 0 70px rgba(255, 245, 170, .5);
 
   z-index: 3;
 }
@@ -233,8 +217,7 @@ body {
   background:
     rgba(255, 219, 70, .12);
 
-  filter:
-    blur(70px);
+  filter: blur(70px);
 
   left: 50%;
   top: 45%;
@@ -276,8 +259,7 @@ body {
   font-size:
     clamp(45px, 9vw, 80px);
 
-  color:
-    #fff1a0;
+  color: #fff1a0;
 
   text-shadow:
     0 4px 15px
@@ -877,6 +859,7 @@ body {
     );
 
   box-shadow:
+
     inset 5px 5px 12px
     rgba(255, 255, 180, .45),
 
@@ -891,7 +874,7 @@ body {
 
 
 /* =====================================
-   BRILLOS DE LAS FLORES
+   BRILLOS
 ===================================== */
 
 .flower-glow {
@@ -940,9 +923,7 @@ body {
 
   z-index: 20;
 
-  /*
-     MÁS ARRIBA EN PC
-  */
+  /* MÁS ARRIBA EN PC */
   top: 25%;
 
   right: 5%;
@@ -989,14 +970,11 @@ body {
 
   scroll-behavior:
     smooth;
-
-  scroll-padding-top:
-    0;
 }
 
 
 /* =====================================
-   SCROLL DE LA CARTA
+   SCROLL
 ===================================== */
 
 .message::-webkit-scrollbar {
@@ -1032,7 +1010,7 @@ body {
 
 
 /* =====================================
-   TÍTULO DE LA CARTA
+   TÍTULO CARTA
 ===================================== */
 
 .message h2 {
@@ -1052,7 +1030,7 @@ body {
 
 
 /* =====================================
-   TEXTO DE LA CARTA
+   TEXTO CARTA
 ===================================== */
 
 .message p {
@@ -1082,7 +1060,7 @@ body {
     bold;
 
   margin-top:
-    20px !important;
+    20px;
 }
 
 
@@ -1128,10 +1106,10 @@ body {
 .start {
   position: absolute;
 
-  z-index: 40;
+  z-index: 100;
 
   bottom:
-    35px;
+    25px;
 
   left:
     50%;
@@ -1146,7 +1124,7 @@ body {
     999px;
 
   padding:
-    15px 28px;
+    12px 24px;
 
   background:
     linear-gradient(
@@ -1159,7 +1137,7 @@ body {
     #614c0a;
 
   font-size:
-    16px;
+    15px;
 
   font-weight:
     bold;
@@ -1167,9 +1145,12 @@ body {
   cursor:
     pointer;
 
+  white-space:
+    nowrap;
+
   box-shadow:
-    0 10px 30px
-    rgba(0, 0, 0, .25);
+    0 8px 25px
+    rgba(0, 0, 0, .3);
 
   transition:
     transform .25s ease,
@@ -1251,12 +1232,11 @@ body {
       translateX(-50%)
       scale(.55);
 
-    /*
-      Antes: 20px
-      Ahora subimos las flores
-    */
     bottom:
       65px;
+
+    z-index:
+      5;
   }
 
 
@@ -1275,15 +1255,11 @@ body {
     top:
       auto;
 
-    /*
-      La carta queda por encima
-      del botón y de las flores
-    */
     bottom:
-      105px;
+      100px;
 
     max-height:
-      38vh;
+      34vh;
 
     padding:
       18px;
@@ -1293,6 +1269,9 @@ body {
 
     transform:
       translateY(80px);
+
+    z-index:
+      20;
   }
 
 
@@ -1328,18 +1307,27 @@ body {
 
 
   /* =========================
-     BOTÓN
+     BOTÓN CELULAR
   ========================= */
 
   .start {
+    z-index:
+      100;
+
     bottom:
-      18px;
+      15px;
 
     padding:
-      12px 22px;
+      11px 22px;
 
     font-size:
       14px;
+
+    min-width:
+      150px;
+
+    text-align:
+      center;
   }
 
 
@@ -1350,11 +1338,14 @@ body {
   .heart {
     font-size:
       40px;
+
+    z-index:
+      30;
   }
 
 
   /* =========================
-     CONTROLES DE MÚSICA
+     CONTROLES MÚSICA
   ========================= */
 
   .music-controls {
